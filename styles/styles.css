@@ -8,7 +8,10 @@
     list-style:none;
     scroll-behavior: smooth;
 }
-
+::selection{
+    color: #020307;
+    background-color: #fff;
+}
 html::-webkit-scrollbar{
     width: 0.5rem;
     background-color:var(--bg-color);
