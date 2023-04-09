@@ -8,7 +8,6 @@
     list-style:none;
     scroll-behavior: smooth;
 }
-/* custom scroll bar */
 
 html::-webkit-scrollbar{
     width: 0.5rem;
@@ -20,7 +19,6 @@ html::-webkit-scrollbar-thumb{
 }
 
 
-/* Global colors */
 :root{
     --main-color:#F5C518;
     --text-color:#fff;
@@ -33,7 +31,6 @@ body{
     
 }
 
-/* header */
 header{
     width: 100%;
     z-index: 15;
@@ -179,7 +176,6 @@ header{
     margin: 0px auto 0px auto;
     padding: 10px;
     display: grid;
-    /* grid-template-columns: auto auto auto auto; */
     grid-template-columns:repeat(auto-fit,minmax(180px,auto));
     gap: 1rem;
     margin-top: 2rem;
@@ -206,7 +202,6 @@ header{
     filter: brightness(1);
 }
 
-/* contact section */
 
 .contact{
     max-width: 968px;
@@ -358,7 +353,6 @@ header{
     }
     .movie-container{
         
-        /* grid-template-columns: auto auto auto auto; */
         grid-template-columns:repeat(auto-fit,minmax(130px,auto));
        
     }
@@ -385,7 +379,6 @@ header{
     }
     .movie-container{
         
-        /* grid-template-columns: auto auto auto auto; */
         grid-template-columns:repeat(auto-fit,minmax(110px,auto));
        
     }
