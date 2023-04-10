@@ -11,6 +11,7 @@
     <meta property="og:description" content="Watch the latest movies online for free on our movie website. Browse through our collection of movie cards and enjoy your favorite movies in high quality.">
     <meta name="robots" content="index,follow" >
     <meta property="site_name" content="IMDB">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
     
@@ -24,7 +25,7 @@
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#movies">Series</a></li>
             <li><a href="#coming">Movie</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#search">Search</a></li>
         </ul>
         
         <a href="" class="btn">Sing In</a>
@@ -49,9 +50,15 @@
                 </span>
             </div>
         </div>
-        
     </section>
-    
+    <section class="search" id="search">
+        <h2>FindYour Movie</h2>
+        <form action="#">
+            <input type="text" name="text" placeholder="movie ..." >
+            <input type="submit" value="Send" class="btn">
+        </form>
+
+    </section>
   
     
     <section id="movies" class="movies">
@@ -172,24 +179,16 @@
         
     </section>
 
-    <section class="contact" id="contact">
-        <h2>Contact Us Email</h2>
-        <form action="#">
-            <input type="email" name="email" placeholder="Enter Email..." required>
-            <input type="submit" value="Send" class="btn">
-        </form>
-
-    </section>
+    
 
     <section class="footer" id="footer">
         <a href="" class="logo">
-            <i class='bx bxs-movie'></i>Movie Lab
+            <i class='bx bxs-movie'></i>Movie Site
         </a>
         <div class="social">
-            <a href="#" class="logo"><i class="bx bxl-facebook"></i></a>
-            <a href="#" class="logo"><i class="bx bxl-twitter"></i></a>
-            <a href="#" class="logo"><i class="bx bxl-instagram"></i></a>
-            <a href="#" class="logo"><i class="bx bxl-tiktok"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="logo"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank" class="logo"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="logo" target="_blank"><i class="bx bxl-instagram"></i></a>
         </div>
     </section>
     
