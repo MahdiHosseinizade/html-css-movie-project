@@ -1,0 +1,138 @@
+/* set variables for colors */
+:root {
+  
+  --main-color:#F5C518;
+  --text-color:#fff;
+  --bg-color:#252525;
+}
+
+/* reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* set body styles */
+body {
+  background-color: var(--bg-color);
+  font-family: Arial, sans-serif;
+}
+
+/* set header styles */
+header {
+  background-color: var(--main-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 8px 10px;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+
+.logo i {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+/* set styles for login form */
+.loginHeader {
+  border: 1px solid #ccc;
+  width: 500px;
+  background-color: var(--bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--text-color);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+/* .navBar{
+  border-radius: 10px;
+  background-color: var(--main-color);
+} */
+.navBar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.navBar a{
+  color: var(--bg-color);
+  text-decoration: none;
+}
+.navBar a:active{
+  color: red;
+}
+
+.loginForm h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.loginForm form div {
+  margin-bottom: 20px;
+}
+
+.loginForm label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rememberMe label {
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+
+button[type="submit"] {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+.loginForm p {
+  margin-top: 20px;
+}
+
+.loginForm a {
+  color: var(--main-color);
+}
