@@ -18,6 +18,10 @@ body {
   background-color: var(--bg-color);
   font-family: Arial, sans-serif;
 }
+::selection{
+  color: #020307;
+  background-color: #fff;
+}
 
 /* set header styles */
 header {
@@ -115,18 +119,22 @@ ul{
 }
 
 button[type="submit"] {
-  background-color: var(--main-color);
-  color: #fff;
+  background-color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
   padding: 10px 20px;
-  border: none;
   border-radius: 5px;
   font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
+
 button[type="submit"]:hover {
-  background-color: #0069d9;
+  background-color: var(--main-color);
+  color: var(--bg-color);
 }
 
 .loginForm p {
