@@ -7,8 +7,12 @@
 }
 
 /* reset some default styles */
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: RegularEnglish ;
+  src: url(../Nunito-Regular.ttf);
+}
+*{
+  font-family: RegularEnglish;
   margin: 0;
   padding: 0;
 }
@@ -16,7 +20,6 @@
 /* set body styles */
 body {
   background-color: var(--bg-color);
-  font-family: Arial, sans-serif;
 }
 ::selection{
   color: #020307;
