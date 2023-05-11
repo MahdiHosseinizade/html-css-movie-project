@@ -34,6 +34,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  border-radius: 10px;
+  width: 100%;
 }
 a{
   text-decoration: none;
@@ -59,7 +61,7 @@ ul{
 
 /* set styles for login form */
 .loginHeader {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   width: 500px;
   background-color: var(--bg-color);
   padding: 30px;
@@ -78,6 +80,9 @@ ul{
   justify-content: space-around;
   gap: 20px;
 }
+.navBar ul li{
+  margin-left: 90px;
+}
 
 .navBar a{
   color: var(--bg-color);
@@ -85,6 +90,7 @@ ul{
 }
 .navBar a:active{
   color: red;
+  border-bottom: #b0afab;
 }
 
 .loginForm h1 {
@@ -93,13 +99,15 @@ ul{
 }
 
 .loginForm form div {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .loginForm label {
   display: block;
   font-size: 1.2rem;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .loginForm input[type="text"],
@@ -108,6 +116,7 @@ ul{
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
 .rememberMe {
@@ -146,4 +155,41 @@ button[type="submit"]:hover {
 
 .loginForm a {
   color: var(--main-color);
+}
+
+@media screen and (max-width: 557px) {
+  /* header styles */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  /* login form styles */
+  .loginHeader {
+    width: 90%;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .loginForm label {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .navBar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navBar ul li{
+    margin-left: 0;
+  }
+
 }
