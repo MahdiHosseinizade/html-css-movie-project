@@ -25,7 +25,7 @@ html,body{
     background-position-x: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../assets/img/MadMax.jpg');
+    background-image: url('../assets/img/bg.jpg');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,8 +106,8 @@ html,body{
   }
   .side{
     min-width: 360px;
-    height: 100px;
-    background-color: blue;
+    height: fit-content;
+    background-color: rgb(173, 173, 189);
   }
   .category{
     width: calc(100vw - 380px);
