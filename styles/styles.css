@@ -102,7 +102,7 @@ header{
     color: var(--text-color);
     font-weight: 400;
     border-radius: 0.5rem;
-
+    transition: all .3s ease-in-out;
 }
 .btn:hover{
     background-color: var(--main-color);
@@ -186,7 +186,7 @@ header{
     margin: 0px auto 0px auto;
     padding: 10px;
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,auto));
+    grid-template-columns:repeat(4,1fr);
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -249,6 +249,8 @@ header{
     cursor: pointer;
     border: none;
     outline: none;
+    transition: all .3s ease-in-out;
+    width: 100px;
 }
 
 /* footer */
