@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/profile.css">
+</head>
+<body>
+    <header>
+        <a href="../html/index.html" class="logo">
+            <i class='bx bxs-movie'></i>IMDB 
+        </a>
+    </header>
+	<div class="container">
+		<div class="profile">
+			<img src="../assets/img/alex.jpg" alt="Profile Picture">
+			<h2>mmd</h2>
+			<p>mmd@email.com</p>
+			<button id="edit-profile-btn">Edit Profile</button>
+		</div>
+	</div>
+
+	<div class="edit-profile-popup" id="edit-profile-popup">
+		<div class="edit-profile-container">
+			<h2>Edit Profile</h2>
+			<form>
+				<div class="profile-picture-container">
+					<label for="profile-picture">Profile Picture:</label>
+					<img id="current-profile-picture" src="../assets/img/alex.jpg" alt="Current Profile Picture">
+					<input accept="image/*" type="file" id="new-profile-picture" name="new-profile-picture">
+				</div>
+                <label for="userName">UserName</label>
+				<input type="text" id="userName" name="userName" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+				<button type="submit">Update</button>
+			</form>
+		</div>
+	</div>
+</body>
+<script>
+    var editProfilePopup = document.getElementById("edit-profile-popup");
+    var editProfileBtn = document.getElementById("edit-profile-btn");
+    var closeEditProfileBtn = document.getElementById("close-edit-profile-btn");
+    editProfileBtn.addEventListener("click", function(){
+        editProfilePopup.style.display = "block";
+    });
+    closeEditProfileBtn.addEventListener("click", function(){
+        editProfilePopup.style.display = "none";
+    });
+    window.addEventListener("click", function(event){
+        if(event.target == editProfilePopup){
+            editProfilePopup.style.display = "none";
+        }
+    });
+</script>
+</html>
