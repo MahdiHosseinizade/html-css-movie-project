@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/watchlist.css">
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	  </head>
+	  
+    <style>
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<a href="../html/index.html" class="logo">
+		  <i class='bx bxs-movie'></i>IMDB 
+		</a>
+		<div onclick="redirectTo('./profile.html')" class="person-icon">
+		  <i class='fas fa-user-alt'></i>
+		</div>
+	</header>
+    <h1>My Watch List</h1>
+	<ul class="watchlist">
+		<li>
+			<img src="../assets/img/LastOfUsbg.jpg" alt="Movie Poster">
+			<div>
+				<h2>LastOfUs</h2>
+				<p>Release Year: 2022</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</div>
+			    <button class="remove-button">Remove</button>
+                <button class="watch-button">Watch</button>
+		</li>
+		<li>
+			<img src="../assets/img/breakingbad.jpg" alt="Movie Poster">
+			<div>
+				<h2>BreakingBad</h2>
+				<p>Release Year: 2011</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</div>
+			<button class="remove-button">Remove</button>
+            <button class="watch-button">Watch</button>
+		</li>
+		<li>
+			<img src="../assets/img/Friends.jpg" alt="Movie Poster">
+			<div>
+				<h2>Friends</h2>
+				<p>Release Year: 2011</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</div>
+			<button class="remove-button">Remove</button>
+            <button class="watch-button">Watch</button>
+		</li>
+	</ul>
+    <script>
+		function redirectTo(url){
+            window.location.href = url;
+        }
+	</script>
+</body>
+</html>
