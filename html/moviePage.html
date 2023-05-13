@@ -22,7 +22,7 @@
                 <h4>04/21/2023 (US). Action, Drama, War. 2h 3m</h4>
                 <div class="icons">
                     <div data-text="Login to add this movie to your watchlist" class="icon">
-                        <i class="fas fa-save"></i>
+                        <i onclick="redirectTo('./watchlist.html')"  class="fas fa-save"></i>
                     </div>
                     <div data-text="Login to add this movie to your favorite list" class="icon">
                         <i class="fas fa-heart"></i>
@@ -74,17 +74,24 @@
                         <img src="../assets/img/jkrow.jpg" />
                          <h4>JRowling</h4>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corrupti eveniet blanditiis, inventore aperiam, debitis, iusto illo sed dicta at eligendi accusamus! Perferendis quasi esse dicta aliquam labore magni error?</p>
+                    <p>Lorem ipsum dolor sit ametis, iustosi esse dicta aliquam labore magni error?</p>
                 </div>
                 <div class="review">
                     <div class="user">
                         <img src="../assets/img/bradpit.jpg" />
                          <h4>Mahdi Hosseini</h4>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit rerum magni veniam, voluptatum corrupti maiores, nisi inventore laborum impedit a molestias ad sed ratione tenetur possimus distinctio eveniet eaque hic.</p>
+                    <p>Lorem ipsum dolor sit amet gni veniam, voluptatum um  tenetur possimus distinctio eveniet eaque hic.</p>
+                </div>
+                <div class="review">
+                    <div class="user">
+                        <img src="../assets/img/em.jpg" />
+                         <h4>Angelina Jolie</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amegni veniam, voluptatore laratione tenetur possimus distinctio eveniet eaque hic.</p>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <div class="side">
         <h2>More Information</h2>
@@ -139,5 +146,10 @@
     </section>
 
     </main>
+    <script>
+		function redirectTo(url){
+            window.location.href = url;
+        }
+	</script>
 </body>
 </html>
