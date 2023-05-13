@@ -1,3 +1,17 @@
+::selection{
+  color: #020307;
+  background-color: #fff;
+}
+html::-webkit-scrollbar{
+  width: 0.5rem;
+  background-color:var(--bg-color);
+}
+html::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+  border-radius: 5;
+}
+
+
 :root {
   
   --main-color:#F5C518;
@@ -30,8 +44,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  /* width: 100%; */
+}
+.header_form{
   width: 100%;
+  border-radius: 10px;
 }
 a{
   text-decoration: none;
@@ -40,7 +58,8 @@ ul{
   list-style: none;
 }
 .active{
-  border-bottom: 1px solid  red;
+  border-bottom: 3px solid var(--bg-color);
+  transition: all 0.3s ease-in-out !important;
 }
 .logo {
   font-size: 2rem;
