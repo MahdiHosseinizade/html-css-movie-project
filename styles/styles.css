@@ -41,6 +41,21 @@ body{
     
 }
 
+#backGroundImg{
+    animation: zoom 20s alternate infinite;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 header{
     width: 100%;
     z-index: 15;
@@ -117,6 +132,7 @@ header{
     position: relative;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .container img{
     position: absolute;
