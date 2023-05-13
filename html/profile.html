@@ -44,7 +44,10 @@
 				<input type="email" id="email" name="email" required>
 				<label for="password">Password:</label>
 				<input type="password" id="password" name="password" required>
-				<button type="submit">Update</button>
+				<div class="editprofile_buttons">
+					<button type="submit">Update</button>
+					<button id="close-edit-profile-btn" type="button">Close</button>
+				</div>
 			</form>
 		</div>
 	</div>
@@ -64,5 +67,10 @@
             editProfilePopup.style.display = "none";
         }
     });
+	var closeEditProfileBtn = document.getElementById("close-edit-profile-btn");
+closeEditProfileBtn.addEventListener("click", function(){
+    editProfilePopup.style.display = "none";
+});
+	
 </script>
 </html>
