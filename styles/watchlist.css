@@ -2,15 +2,15 @@
 
 @font-face {
     font-family: RegularEnglish ;
-    src: url(../Nunito-Regular.ttf);
+    src: url(../assets/fonts/Nunito-Regular.ttf);
 }
 
 *{
-    font-family: RegularEnglish;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', 'Trebuchet MS',sans-serif;
+    font-family: RegularEnglish;
     text-decoration: none;
     list-style:none;
     scroll-behavior: smooth;

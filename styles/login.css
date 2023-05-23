@@ -21,7 +21,7 @@ html::-webkit-scrollbar-thumb{
 
 @font-face {
   font-family: RegularEnglish ;
-  src: url(../Nunito-Regular.ttf);
+  src: url(../assets/fonts/Nunito-Regular.ttf);
 }
 *{
   font-family: RegularEnglish;
