@@ -16,7 +16,7 @@ html::-webkit-scrollbar-thumb{
   
   --main-color:#F5C518;
   --text-color:#fff;
-  --bg-color:#252525;
+  --bg-color:#000000;
 }
 
 @font-face {

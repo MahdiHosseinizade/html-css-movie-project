@@ -126,7 +126,7 @@ html,body{
   .icon{
     width:46px;
     height: 46px;
-    background-color: #635f5f;
+    background-color: var(--bg-color);
     color: var(--main-color);
     border-radius: 50%;
     display: flex;
@@ -245,7 +245,7 @@ html,body{
   .keywords_side{
     margin-top: 30px;
     margin-left: 10px;
-    margin-bottom: 1px solid #d7d7d7;
+    margin-bottom: 1px solid var(--bg-color);
     margin-bottom: 30px;
   }
   .keywords_side h4{
@@ -267,9 +267,9 @@ html,body{
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 0.9em;
-    background-color: #dadada;
-    border: 1px solid #dadada;
-    color: var(--bg-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    color: var(--text-color);
     padding: 5px 10px;
     border-radius: 5px;
   }
