@@ -167,7 +167,7 @@ html,body{
     
   }
   .scroll section{
-    width: 275px;
+    width: 225px;
     display: inline-block;
     flex-direction: column;
     align-items: center;
@@ -175,14 +175,14 @@ html,body{
   }
   .scroll img{
     /* width: 100%; */
-    width: 275px;
+    width: 225px;
     position: relative;
     /* min-width:140px;
     min-height: 210px; */
     border-radius: 10px;
     background-color: blueviolet;
     margin: 10px 20px 0 0;
-    height: 315px;
+    height: 300px;
 
   }
 
@@ -190,6 +190,7 @@ html,body{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-right: 12%;
   }
   
   .user{
@@ -236,6 +237,7 @@ html,body{
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 10px;
+    margin-top: 5%;
   }
   
   .information_side .grid div {
@@ -273,7 +275,9 @@ html,body{
     padding: 5px 10px;
     border-radius: 5px;
   }
-  
+  bdi{
+    margin-left: 8%;
+  }
   .category{
     width: calc(100vw - 380px);
   }
