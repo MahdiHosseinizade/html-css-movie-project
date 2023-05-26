@@ -77,7 +77,7 @@ ul{
 }
 
 .loginHeader {
-  width: 60%;
+  width: 500px;
   background-color: var(--bg-color);
   padding: 30px;
   border-radius: 10px;
@@ -180,16 +180,20 @@ button[type="submit"]:hover {
     padding: 20px;
   }
 
+  .header_form{
+    width: 92%;
+  }
+
   .logo {
     margin-bottom: 20px;
   }
-
-  .header_form{
-    width: 95%;
+  .loginForm input[type="text"],
+  .loginForm input[type="password"]{
+    width: 96%;
   }
 
   .loginHeader {
-    /* width: 90%; */
+    width: 90%;
     padding: 20px;
     margin-top: 30px;
   }
