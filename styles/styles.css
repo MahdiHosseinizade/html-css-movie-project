@@ -131,13 +131,27 @@ header{
     width: 100%;
     
 }
-.btn{
+.btn {
     background-color: var(--bg-color);
     padding: 0.7rem 1.4rem;
     color: var(--text-color);
     font-weight: 400;
     border-radius: 0.5rem;
     transition: all .3s ease-in-out;
+}
+
+.signInbtn{
+    background-color: var(--bg-color);
+    padding: 0.7rem 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+    transition: all .3s ease-in-out;
+    border: 1px solid var(--main-color);
+}
+.signInbtn:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
 }
 .btn:hover{
     background-color: var(--main-color);
@@ -360,13 +374,14 @@ header{
     .home-text h1{
         font-size: 2rem;
     }
-    .btn{
+    .signInbtn{
         display: none;
         padding: 0.6rem 1.2rem;
     }
     section{
         padding: 2px;
     }
+    
 }
 
 @media (max-width:480px) {
