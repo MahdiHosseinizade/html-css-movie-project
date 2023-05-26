@@ -85,6 +85,7 @@ h1 {
     color: var(--text-color);
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 ul {
     
@@ -114,6 +115,22 @@ li p {
     margin: 0;
     font-size: 14px;
     color: #888;
+    margin-top: 2%;
+}
+.time-genre{
+    display: flex;
+    flex-direction: column;
+}
+.realse{
+    margin-left: 1%;
+}
+.time-genre h4{
+    color: #888;
+    font-size: 14px;
+}
+.watchlist-icon{
+    color: var(--main-color);
+    margin-right:10px;
 }
 
 li button {
@@ -168,6 +185,13 @@ li button.remove-button:hover {
     
     ul.watchlist li div {
       flex-grow: 1;
+      margin-left: 5%;
+    }
+    .time-genre{
+        display: flex;
+        flex-direction: row; /* Update this line to flex-direction: row */
+        align-items: center;
+        
     }
     
     li button {
