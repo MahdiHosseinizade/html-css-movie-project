@@ -13,7 +13,8 @@
     font-family: RegularEnglish;
     text-decoration: none;
     list-style:none;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth ;
+    scroll-padding-top: 90px;
 }
 ::selection{
     color: #020307;
@@ -81,7 +82,26 @@ header{
     color: var(--main-color);
     margin-right: 5px;
 }
-
+.cc{
+    display: flex;
+    align-items: center;
+}
+.menuBurger{
+    width: 300px;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    right: -100%;
+    top:0;
+    transition: all .3s ease-in;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    background-color: #F5C518;
+    display: none;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -327,6 +347,9 @@ header{
     }
 }
 @media (max-width:900px){
+    .icon{
+        display: block;
+    }
     header{
         padding: 20px 20px;
         justify-content: space-between;
@@ -338,6 +361,7 @@ header{
         font-size: 2rem;
     }
     .btn{
+        display: none;
         padding: 0.6rem 1.2rem;
     }
     section{
