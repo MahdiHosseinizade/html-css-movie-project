@@ -14,3 +14,12 @@ link.addEventListener('click', function() {
     this.classList.add('active');
 });
 });;
+
+var menuItems = document.querySelectorAll('.menuBurger li');
+
+menuItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+    var menuBurger = document.querySelector('.menuBurger');
+    menuBurger.style.right = '-100%';
+  });
+});

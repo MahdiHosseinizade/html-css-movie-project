@@ -96,11 +96,29 @@ header{
     top:0;
     transition: all .3s ease-in;
 }
+.menuBurger ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.menuBurger ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+.menuBurger ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
 .icon{
     width: 30px;
     height: 30px;
-    background-color: #F5C518;
+    cursor: pointer;
     display: none;
+    font-size: 20px;
 }
 .navbar{
     display: flex;
